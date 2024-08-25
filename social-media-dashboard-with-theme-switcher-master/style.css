@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(8, 8, 22);
+    color:hsl(0, 0%, 100%);
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+body.active{
+    background-color: hsl(225, 100%, 98%);
+    color: rgb(8, 8, 22);
+}
+
+.Head-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 85px;
+}
+.social-text p{
+    margin-left: -45px;
+    font-weight: bold;
+}
+.change-mode{
+    display: flex;
+}
+.change-mode span{
+    font-weight: bold;
+}
+.ModeContainer{
+    height: 20px;
+    width: 40px;
+    background-image: linear-gradient(to right , rgb(0, 217, 255) , rgb(41, 255, 70));
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.ModeContainer .mode{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 2px;
+    background-color: rgb(8, 8, 22);
+    transition: all 0.5s ease;
+}
+.ModeContainer.active{
+    background: hsl(240, 3%, 79%);
+}
+.ModeContainer.active .mode{
+    margin-left: 20px;
+    background: hsl(227, 47%, 96%);
+
+}
+
+.child-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    
+}
+body.active .first-child{
+    background: hsl(240, 33%, 96%);
+}
+body.active .second-child{
+    background: hsl(240, 33%, 96%);
+}
+body.active .third-child{
+    background: hsl(240, 33%, 96%);
+}
+body.active .four-child{
+    background: hsl(240, 33%, 96%);
+}
+body.active .overview-first-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .overview-second-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .overview-third-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .overview-four-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .overview-five-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .overview-six-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .overview-seven-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .overview-eight-child{
+    background: hsl(240, 4%, 89%);
+}
+body.active .third-section p{
+    color: hsl(240, 1%, 39%);
+}
+body.active .four-section p{
+    color: hsl(240, 1%, 39%);
+}
+
+
+.first-child{
+    height: 28vh;
+    width: 20vw;
+    background-color: rgb(14, 14, 39);
+    border-radius: 4px;
+    border-top: 4px solid hsl(208, 92%, 53%);
+}
+.followers-information h1,p{
+    text-align: center;
+}
+.followers-information h1{
+    font-size: 4rem;
+}
+.followers-information p{
+    font-size: 9px;
+    letter-spacing: 5px;
+    color:hsl(240, 3%, 79%) ;
+    margin-top: -2px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+}
+.info svg{
+    font-size: 2rem;
+    margin-top: 9px;
+}
+.info span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #1EB589;
+}
+.account-information{
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    gap: 10px;
+}
+.account-information span{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.first-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+.second-child{
+    height: 28vh;
+    width: 20vw;
+    background-color:  rgb(14, 14, 39);
+    border-radius: 4px;
+    border-top: 4px solid hsl(208, 89%, 53%);
+}
+.second-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+.third-child{
+    height: 28vh;
+    width: 20vw;
+    background-color:  rgb(14, 14, 39);
+    border-top: 4px solid transparent;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-image: linear-gradient(to right,hsl(37, 97%, 70%) , hsl(329, 70%, 58%)  );
+    border-radius: 4px;
+    border-image-slice: 1;
+}
+.third-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+.four-child{
+    height: 28vh;
+    width: 20vw;
+    background-color: rgb(14, 14, 39);
+    border-radius: 4px;
+    border-top: 4px solid hsl(348, 97%, 39%);
+}
+.four-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+.overview h2{
+    margin: 40px 85px;
+}
+.overview-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin:25px 0;
+}
+.overview-first-child{
+    height: 15vh;
+    width: 20vw;
+    background-color: rgb(14, 14, 39);
+    border-radius: 4px;
+}
+.overview-first-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+.overview-second-child{
+    height: 15vh;
+    width: 20vw;
+    background-color:  rgb(14, 14, 39);
+    border-radius: 4px;
+    
+}
+.overview-second-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+.overview-third-child{
+    height: 15vh;
+    width: 20vw;
+    background-color:  rgb(14, 14, 39);
+    border-radius: 4px;
+}
+.overview-third-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+.overview-four-child{
+    height: 15vh;
+    width: 20vw;
+    background-color: rgb(14, 14, 39);
+    border-radius: 4px;
+}
+.overview-four-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+.second-overview-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.overview-five-child{
+    height: 15vh;
+    width: 20vw;
+    background-color: rgb(14, 14, 39);
+    border-radius: 4px;
+}
+.overview-five-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+.overview-six-child{
+    height: 15vh;
+    width: 20vw;
+    background-color:  rgb(14, 14, 39);
+    border-radius: 4px;
+    
+}
+.overview-six-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+.overview-seven-child{
+    height: 15vh;
+    width: 20vw;
+    background-color:  rgb(14, 14, 39);
+    border-radius: 4px;
+}
+.overview-seven-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+.overview-eight-child{
+    height: 15vh;
+    width: 20vw;
+    background-color: rgb(14, 14, 39);
+    border-radius: 4px;
+}
+.overview-eight-child:hover{
+    background-color: rgb(22, 22, 43);
+}
+
+
+
+.pages{
+    display: flex;
+    justify-content: space-around;
+    gap: 55px;
+    margin: 20px 0;
+}
+.pages p{
+    font-weight: bold;
+    color: hsl(240, 3%, 79%);
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    gap:155px;
+    margin: 25px 0;
+}
+.stats-image{
+    margin-top: 5px;
+}
+.stats-image span{
+    font-weight: bold;
+    color: #1EB589;
+}
+.pages-two{
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    margin: 20px 0;
+}
+.pages-two p{
+    font-weight: bold;
+    color: hsl(240, 3%, 79%);
+}
+.stats-three{
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    margin: 25px 0;
+}
+.pages-four{
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 20px 0;
+}
+.stats-four{
+    display: flex;
+    justify-content: center;
+    gap:110px;
+    margin: 25px 0;
+}
+
+@media screen and (max-width: 600px)  {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: rgb(8, 8, 22);
+        color:hsl(0, 0%, 100%);
+        font-family: 'Inter', sans-serif;
+        cursor: pointer;
+    }
+    .Head-container{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .social-text h3{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+    }
+    .social-text p{
+        margin-left: -45%;
+    }
+    .change-mode{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+    }
+    .change-mode .ModeContainer{
+        position: relative;
+        left: 80px;
+    }
+    .child-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first-child , .second-child ,.third-child,.four-child{
+        height: 35vh;
+        width: 90%;
+        background-color: rgb(14, 14, 39);
+        border-radius: 4px;
+        border-top: 4px solid hsl(208, 92%, 53%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .overview h2{
+        margin: 15px 0;
+        margin-left:20px ;
+    }
+    .overview-container,.second-overview-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .overview-first-child,
+    .overview-second-child,
+    .overview-third-child,
+    .overview-four-child,
+    .overview-five-child,
+    .overview-six-child,
+    .overview-seven-child,
+    .overview-eight-child{
+        height: 17vh;
+        width: 90%;
+        background-color: rgb(14, 14, 39);
+        border-radius: 4px;
+    }
+    .stats{
+        display: flex;
+        justify-content: center;
+        gap:150px;
+        margin: 25px 0;
+    }
+
+}
